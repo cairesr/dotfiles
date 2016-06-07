@@ -5,11 +5,12 @@ export GREP_OPTIONS="--color=always"
 
 #### ALIASES ####
 alias ll='ls -lG'
-alias lt='ls -lart'
 
 #### RBENV ####
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 #### GIT DEFAULTS ####
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
