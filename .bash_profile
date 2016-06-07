@@ -13,5 +13,5 @@ if [ -d $HOME/.rbenv ]; then
 fi
 
 #### GIT DEFAULTS ####
-source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+source .git_completion
 PS1="[\033[32m\]\H]:\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;36m\]\u\[\033[32m\]$ \[\033[0m\]"
