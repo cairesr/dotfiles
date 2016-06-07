@@ -1,1 +1,1 @@
-ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+test -s /Applications/Atom.app/Contents/Resources/app/atom.sh && echo >&2 ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
