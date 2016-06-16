@@ -12,18 +12,26 @@
   branch = auto
   ui = true
 
+[pager]
+	log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
+
 [alias]
-  sh = !git-sh
-  ci = commit
-  co = checkout
-  b = branch
-  st = status
-  who = shortlog -s --
-  fl = log -p
-  lg = log --oneline --decorate
-  sb = status -sb
-  dw = diff --word-diff
-  ls = diff HEAD~1..HEAD
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	st = status
+	ci = commit
+	ad = add
+	ps = push
+	br = branch
+	co = checkout
+	df = diff
+	dff = diff
+	l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	s = status -s
+	d = diff --patch-with-stat
+	branches = branch -a
+	remotes = remote -v
 
 [help]
   autocorrect = 1
