@@ -5,6 +5,7 @@ export GREP_OPTIONS="--color=always"
 
 #### ALIASES ####
 alias ll='ls -lG'
+alias cartman_says='~/imgcat ~/projects/cairesr/dotfiles/.images/cartman.png'
 
 #### RBENV ####
 if [ -d $HOME/.rbenv ]; then
